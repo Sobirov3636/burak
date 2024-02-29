@@ -1,16 +1,28 @@
-// H-TASK
-const getPositive = (arr: number[]) => {
-  let res: string = "";
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] >= 0) {
-      res += arr[i];
-    }
-  }
-  return res;
-};
+/* Project Standards:
+  - Logging standards
+  - Naming standards
+     function, method, variable => CAMEL case
+     class => PASKAL case
+     folder => KEBAB case
+     css => SNAKE case
+  - Error handling
+     
 
-const result = getPositive([1, 2, 3, 4, 0, -1, -4, 6, -8]);
-console.log(result);
+*/
+
+// // H-TASK
+// const getPositive = (arr: number[]) => {
+//   let res: string = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] >= 0) {
+//       res += arr[i];
+//     }
+//   }
+//   return res;
+// };
+
+// const result = getPositive([1, 2, 3, 4, 0, -1, -4, 6, -8]);
+// console.log(result);
 
 // // Sezer challenge
 // const alphabet = "abcdefghijklmnopqrstuvwxyz";
