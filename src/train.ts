@@ -6,8 +6,13 @@
      folder, file => KEBAB case
      css => SNAKE case
   - Error handling
-     
+*/
 
+/* Api turlari:
+  Traditional Api
+  Rest Api
+  GraphQL Api
+  ...
 */
 
 // // H-TASK
