@@ -15,6 +15,19 @@
   ...
 */
 
+// I-TASK
+const getDigits = (str: string) => {
+  let result: string = "";
+  for (let i = 0; i < str.length; i++) {
+    if (!isNaN(+str[i])) {
+      result += str[i];
+    }
+  }
+  return result;
+};
+
+const res = getDigits("m14i1t");
+console.log("res:", res);
 // // H-TASK
 // const getPositive = (arr: number[]) => {
 //   let res: string = "";
