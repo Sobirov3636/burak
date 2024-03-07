@@ -15,6 +15,12 @@
   ...
 */
 
+/* 
+  Traditional FD  => BSSR (Admin pageni shu orqai quramiz)=> EJS
+  Modern FD       => SPA(Users' pageni shu usulda quramiz.)  => REACT
+  
+*/
+
 // I-TASK
 const getDigits = (str: string) => {
   let result: string = "";
