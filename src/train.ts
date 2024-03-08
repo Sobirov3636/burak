@@ -21,19 +21,34 @@
   
 */
 
-// I-TASK
-const getDigits = (str: string) => {
-  let result: string = "";
-  for (let i = 0; i < str.length; i++) {
-    if (!isNaN(+str[i])) {
-      result += str[i];
+// J-TASK
+const findLongestWord = (str: string) => {
+  const words = str.split(" ");
+  let result = words[0];
+  for (let i = 1; i < words.length; i++) {
+    if (words[i].length > result.length) {
+      result = words[i];
     }
   }
   return result;
 };
+const res = findLongestWord("I am from Uzbekistan");
+console.log(res);
 
-const res = getDigits("m14i1t");
-console.log("res:", res);
+// // I-TASK
+// const getDigits = (str: string) => {
+//   let result: string = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (!isNaN(+str[i])) {
+//       result += str[i];
+//     }
+//   }
+//   return result;
+// };
+
+// const res = getDigits("m14i1t");
+// console.log("res:", res);
+
 // // H-TASK
 // const getPositive = (arr: number[]) => {
 //   let res: string = "";
