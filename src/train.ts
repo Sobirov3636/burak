@@ -21,6 +21,11 @@
   
 */
 
+/*
+   request join
+   self destroy
+*/
+
 // J-TASK
 const findLongestWord = (str: string) => {
   const words = str.split(" ");
