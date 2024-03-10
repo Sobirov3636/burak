@@ -26,19 +26,34 @@
    self destroy
 */
 
-// J-TASK
-const findLongestWord = (str: string) => {
-  const words = str.split(" ");
-  let result = words[0];
-  for (let i = 1; i < words.length; i++) {
-    if (words[i].length > result.length) {
-      result = words[i];
+// K-TASK
+const countVowels = (str: string) => {
+  let count = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+  str = str.toLowerCase();
+  const charArray = str.split("");
+  for (let i = 0; i < charArray.length; i++) {
+    if (vowels.includes(charArray[i])) {
+      count++;
     }
   }
-  return result;
+  return count;
 };
-const res = findLongestWord("I am from Uzbekistan");
-console.log(res);
+const result = countVowels("MuhammadAli");
+console.log(result);
+// // J-TASK
+// const findLongestWord = (str: string) => {
+//   const words = str.split(" ");
+//   let result = words[0];
+//   for (let i = 1; i < words.length; i++) {
+//     if (words[i].length > result.length) {
+//       result = words[i];
+//     }
+//   }
+//   return result;
+// };
+// const res = findLongestWord("I am from Uzbekistan");
+// console.log(res);
 
 // // I-TASK
 // const getDigits = (str: string) => {
