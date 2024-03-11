@@ -1,6 +1,4 @@
 import express from "express";
-import dotenv from "dotenv";
-
 import path from "path";
 import router from "./router";
 import routerAdmin from "./router-admin";
@@ -10,7 +8,6 @@ import { MORGAN_FORMAT } from "./libs/config";
 import session from "express-session";
 import ConnectMongoDB from "connect-mongodb-session";
 import { T } from "./libs/types/common";
-dotenv.config();
 
 const MongoDBStore = ConnectMongoDB(session);
 const store = new MongoDBStore({
