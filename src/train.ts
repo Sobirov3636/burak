@@ -15,15 +15,21 @@
   ...
 */
 
-/* 
+/* Frontend Development
   Traditional FD  => BSSR (Admin pageni shu orqai quramiz)=> EJS
   Modern FD       => SPA(Users' pageni shu usulda quramiz.)  => REACT
   
 */
 
-/*
+/* Cookies:
    request join
    self destroy
+*/
+
+/* Validations:
+   Frontend validation
+   Backend validation
+   Database validation
 */
 
 // K-TASK
