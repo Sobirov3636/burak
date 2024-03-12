@@ -32,21 +32,47 @@
    Database validation
 */
 
-// K-TASK
-const countVowels = (str: string) => {
-  let count = 0;
-  const vowels = ["a", "e", "i", "o", "u"];
-  str = str.toLowerCase();
-  const charArray = str.split("");
-  for (let i = 0; i < charArray.length; i++) {
-    if (vowels.includes(charArray[i])) {
-      count++;
-    }
+// L-TASK
+// solution 1
+const reverseSentence = (str: string) => {
+  let reversedSentence = "";
+  const res = str.split(" ");
+  for (let i = 0; i < res.length; i++) {
+    const reversedWord = res[i].split("").reverse().join("");
+    reversedSentence += reversedWord + " ";
   }
-  return count;
+  return reversedSentence;
 };
-const result = countVowels("MuhammadAli");
-console.log(result);
+
+const result1 = reverseSentence("we like coding!");
+console.log("result1 =>", result1);
+
+// solution 2
+const reverseSentence2 = (str: string) => {
+  return str
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+};
+
+const result2 = reverseSentence("we like coding!");
+console.log("result2 =>", result2);
+
+// // K-TASK
+// const countVowels = (str: string) => {
+//   let count = 0;
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   str = str.toLowerCase();
+//   const charArray = str.split("");
+//   for (let i = 0; i < charArray.length; i++) {
+//     if (vowels.includes(charArray[i])) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// const result = countVowels("MuhammadAli");
+// console.log(result);
 // // J-TASK
 // const findLongestWord = (str: string) => {
 //   const words = str.split(" ");
