@@ -32,31 +32,42 @@
    Database validation
 */
 
-// L-TASK
-// solution 1
-const reverseSentence = (str: string) => {
-  let reversedSentence = "";
-  const res = str.split(" ");
-  for (let i = 0; i < res.length; i++) {
-    const reversedWord = res[i].split("").reverse().join("");
-    reversedSentence += reversedWord + " ";
-  }
-  return reversedSentence;
+// M-TASK
+const getSquareNumbers = (arr: number[]) => {
+  const res = arr.map((num) => {
+    return { number: num, square: num * num };
+  });
+  return res;
 };
 
-const result1 = reverseSentence("we like coding!");
-console.log("result1 =>", result1);
+const res = getSquareNumbers([1, 2, 3]);
+console.log("result =>", res);
 
-// solution 2
-const reverseSentence2 = (str: string) => {
-  return str
-    .split(" ")
-    .map((word) => word.split("").reverse().join(""))
-    .join(" ");
-};
+// // L-TASK
+// // solution 1
+// const reverseSentence = (str: string) => {
+//   let reversedSentence = "";
+//   const res = str.split(" ");
+//   for (let i = 0; i < res.length; i++) {
+//     const reversedWord = res[i].split("").reverse().join("");
+//     reversedSentence += reversedWord + " ";
+//   }
+//   return reversedSentence;
+// };
 
-const result2 = reverseSentence("we like coding!");
-console.log("result2 =>", result2);
+// const result1 = reverseSentence("we like coding!");
+// console.log("result1 =>", result1);
+
+// // solution 2
+// const reverseSentence2 = (str: string) => {
+//   return str
+//     .split(" ")
+//     .map((word) => word.split("").reverse().join(""))
+//     .join(" ");
+// };
+
+// const result2 = reverseSentence("we like coding!");
+// console.log("result2 =>", result2);
 
 // // K-TASK
 // const countVowels = (str: string) => {
