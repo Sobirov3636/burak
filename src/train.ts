@@ -31,17 +31,26 @@
    Backend validation
    Database validation
 */
-
-// M-TASK
-const getSquareNumbers = (arr: number[]) => {
-  const res = arr.map((num) => {
-    return { number: num, square: num * num };
-  });
-  return res;
+// N-TASK
+const palindromCheck = (str: string) => {
+  const reversedStr = str.split("").reverse().join("");
+  return str === reversedStr ? true : false;
 };
+const result1 = palindromCheck("dad");
+console.log("result1 => ", result1);
+const result2 = palindromCheck("son");
+console.log("result2 => ", result2);
 
-const res = getSquareNumbers([1, 2, 3]);
-console.log("result =>", res);
+// // M-TASK
+// const getSquareNumbers = (arr: number[]) => {
+//   const res = arr.map((num) => {
+//     return { number: num, square: num * num };
+//   });
+//   return res;
+// };
+
+// const res = getSquareNumbers([1, 2, 3]);
+// console.log("result =>", res);
 
 // // L-TASK
 // // solution 1
