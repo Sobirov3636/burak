@@ -9,7 +9,7 @@
 */
 
 /* Api turlari:
-  Traditional Api
+  Traditional Api (misol uchun htmlning form POST)
   Rest Api
   GraphQL Api
   ...
