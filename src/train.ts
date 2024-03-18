@@ -31,15 +31,28 @@
    Backend validation
    Database validation
 */
-// N-TASK
-const palindromCheck = (str: string) => {
-  const reversedStr = str.split("").reverse().join("");
-  return str === reversedStr ? true : false;
+// O-TASK
+const calculateSumOfNumbers = (arr: any[]) => {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === "number") {
+      count += arr[i];
+    }
+  }
+  return count;
 };
-const result1 = palindromCheck("dad");
-console.log("result1 => ", result1);
-const result2 = palindromCheck("son");
-console.log("result2 => ", result2);
+
+const result = calculateSumOfNumbers([10, "10", { son: 10 }, true, 35]);
+console.log("result => ", result);
+// // N-TASK
+// const palindromCheck = (str: string) => {
+//   const reversedStr = str.split("").reverse().join("");
+//   return str === reversedStr ? true : false;
+// };
+// const result1 = palindromCheck("dad");
+// console.log("result1 => ", result1);
+// const result2 = palindromCheck("son");
+// console.log("result2 => ", result2);
 
 // // M-TASK
 // const getSquareNumbers = (arr: number[]) => {
