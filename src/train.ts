@@ -31,19 +31,26 @@
    Backend validation
    Database validation
 */
-// O-TASK
-const calculateSumOfNumbers = (arr: any[]) => {
-  let count = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] === "number") {
-      count += arr[i];
-    }
-  }
-  return count;
+// // P-TASK
+const objectToArray = (obj: { [key: string]: number }) => {
+  return Object.entries(obj);
 };
 
-const result = calculateSumOfNumbers([10, "10", { son: 10 }, true, 35]);
+const result = objectToArray({ a: 10, b: 20 });
 console.log("result => ", result);
+// // O-TASK
+// const calculateSumOfNumbers = (arr: any[]) => {
+//   let count = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === "number") {
+//       count += arr[i];
+//     }
+//   }
+//   return count;
+// };
+
+// const result = calculateSumOfNumbers([10, "10", { son: 10 }, true, 35]);
+// console.log("result => ", result);
 // // N-TASK
 // const palindromCheck = (str: string) => {
 //   const reversedStr = str.split("").reverse().join("");
