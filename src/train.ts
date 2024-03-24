@@ -31,13 +31,29 @@
    Backend validation
    Database validation
 */
-// // P-TASK
-const objectToArray = (obj: { [key: string]: number }) => {
-  return Object.entries(obj);
+// // O-TASK
+
+const hasProperty = (obj: { [key: string]: string }, str: string) => {
+  for (const key in obj) {
+    if (key === str) {
+      return true;
+    }
+  }
+  return false;
 };
 
-const result = objectToArray({ a: 10, b: 20 });
-console.log("result => ", result);
+const result1 = hasProperty({ name: "BMW", model: "M3" }, "model");
+console.log("result1 => ", result1);
+const result2 = hasProperty({ name: "BMW", model: "M3" }, "year");
+console.log("result2 => ", result2);
+
+// // P-TASK
+// const objectToArray = (obj: { [key: string]: number }) => {
+//   return Object.entries(obj);
+// };
+
+// const result = objectToArray({ a: 10, b: 20 });
+// console.log("result => ", result);
 // // O-TASK
 // const calculateSumOfNumbers = (arr: any[]) => {
 //   let count = 0;
