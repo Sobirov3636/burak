@@ -33,19 +33,40 @@
 */
 // // O-TASK
 
-const hasProperty = (obj: { [key: string]: string }, str: string) => {
-  for (const key in obj) {
-    if (key === str) {
-      return true;
-    }
-  }
-  return false;
+const calculate1 = (str: string) => {
+  return eval(str);
 };
 
-const result1 = hasProperty({ name: "BMW", model: "M3" }, "model");
+const result1 = calculate1("1+3");
 console.log("result1 => ", result1);
-const result2 = hasProperty({ name: "BMW", model: "M3" }, "year");
+
+const calculate2 = (str: string) => {
+  let total = 0;
+  str = str.trim();
+  const nums = str.split("+");
+  nums.forEach((num) => {
+    total += parseInt(num);
+  });
+  return total;
+};
+
+const result2 = calculate2("1+3 + 4 + 2  ");
 console.log("result2 => ", result2);
+// // O-TASK
+
+// const hasProperty = (obj: { [key: string]: string }, str: string) => {
+//   for (const key in obj) {
+//     if (key === str) {
+//       return true;
+//     }
+//   }
+//   return false;
+// };
+
+// const result1 = hasProperty({ name: "BMW", model: "M3" }, "model");
+// console.log("result1 => ", result1);
+// const result2 = hasProperty({ name: "BMW", model: "M3" }, "year");
+// console.log("result2 => ", result2);
 
 // // P-TASK
 // const objectToArray = (obj: { [key: string]: number }) => {
