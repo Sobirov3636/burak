@@ -31,27 +31,41 @@
    Backend validation
    Database validation
 */
+// // S-TASK
+
+const missingNumber = (arr: number[]) => {
+  const sortedArr = arr.sort((a, b) => a - b);
+  for (let i = 0; i < sortedArr.length; i++) {
+    if (sortedArr[i] !== sortedArr[i + 1] - 1) {
+      return sortedArr[i] + 1;
+    }
+  }
+};
+
+const result = missingNumber([3, 0, 1]);
+console.log("result => ", result);
+
 // // O-TASK
 
-const calculate1 = (str: string) => {
-  return eval(str);
-};
+// const calculate1 = (str: string) => {
+//   return eval(str);
+// };
 
-const result1 = calculate1("1+3");
-console.log("result1 => ", result1);
+// const result1 = calculate1("1+3");
+// console.log("result1 => ", result1);
 
-const calculate2 = (str: string) => {
-  let total = 0;
-  str = str.trim();
-  const nums = str.split("+");
-  nums.forEach((num) => {
-    total += parseInt(num);
-  });
-  return total;
-};
+// const calculate2 = (str: string) => {
+//   let total = 0;
+//   str = str.trim();
+//   const nums = str.split("+");
+//   nums.forEach((num) => {
+//     total += parseInt(num);
+//   });
+//   return total;
+// };
 
-const result2 = calculate2("1+3 + 4 + 2  ");
-console.log("result2 => ", result2);
+// const result2 = calculate2("1+3 + 4 + 2  ");
+// console.log("result2 => ", result2);
 // // O-TASK
 
 // const hasProperty = (obj: { [key: string]: string }, str: string) => {
